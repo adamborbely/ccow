@@ -1,0 +1,12 @@
+# Állítsuk elő és írassuk ki az első N darab Fibonacci-számot. Ennek a sorozatnak az a jellemzője, hogy
+# bármelyik eleme egyenlő az előző kettő összegével. A sorozat néhány eleme: 1, 1, 2, 3, 5, 8, 13, ...
+
+value_n = int(input("Add meg hany Fibonacci-szamot szeretnel latni: "))
+Fibonacci = [1]
+
+b = 0
+ 
+for i in range(value_n - 1):
+    Fibonacci.append(Fibonacci[i] + b)
+    b = Fibonacci[i]
+print (Fibonacci)
