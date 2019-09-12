@@ -1,0 +1,20 @@
+# Olvassunk be egy szöveget, majd írassuk ki a képernyőre a beolvasott szövegből az összes < és >
+# jelek közé írt részeket, mindegyiket új sorba.
+# Például ha megadjuk a "<Gabor> és Denes <fel>masztak <a diofa>ra." mondatot, a program
+# ezt írja ki
+# Gabor
+# fel
+# a diofa
+
+sentence = input("Adj meg egy mondatot: ")
+sentence_2 =[]
+sentence_3 = []
+
+for i in range(len(sentence)):
+    if sentence[i] == "<":
+        start = i + 1
+        while not(sentence[start]) == ">":
+            sentence_2.append(sentence[start])
+            start += 1
+        sentence_3 = "".join(sentence_2)
+        print(sentence_3)  
