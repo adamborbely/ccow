@@ -1,0 +1,28 @@
+# Kérjünk be N darab természetes számot (először N -t kérjük be). Az adatok beírása után a program
+# írja ki a páros és páratlan számok darabszámát, és a páratlan számok összegét!
+
+ideas = []
+while True:
+    idea = (input("Adj meg egy szamot: "))
+    if idea == "":
+        break
+    else:
+        ideas.append(idea)
+
+ideas = list(map(int, ideas))
+print (ideas)
+
+x = 0
+y = 0
+sum = 0
+for i in ideas:
+    if i / 2 == i // 2:
+       x = x + 1
+    else:
+        y = y + 1
+        sum += i
+
+print("Paros szamok osszesen: " + str(x) + " db")
+print("Paratlan szamok osszesen: " + str(y) + " db")
+print("Paratlan szamok osszege: " + str(sum))
+
