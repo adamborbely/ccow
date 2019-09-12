@@ -1,0 +1,14 @@
+#A program kérjen be egy pénzösszeget, majd határozza meg, és írja ki, hogy hogyan fizethetjük ki a
+#lehető legkevesebb 10, 5, 2 és 1 koronás érmével (használjuk a maradékos osztás % és egész osztás
+#// műveleteket)!
+
+penz_osszeg = int(input("Kerjuk adj meg egy penzosszeget: "))
+
+tizesek = (penz_osszeg // 10)
+otosok = (penz_osszeg % 10 // 5)
+kettesek = (penz_osszeg % 10 % 5 // 2)
+egyes = (penz_osszeg % 10 % 5 % 2 // 1)
+print("10-es: " + str(tizesek) + " db")
+print("5-os: " + str(otosok) + " db")
+print("2-es: " + str(kettesek) + " db")
+print("1-es: " + str(egyes) + " db")
