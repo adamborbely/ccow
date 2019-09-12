@@ -1,0 +1,15 @@
+#Olvassunk be egy a természetes számot és egy ch karaktert. Rajzoljunk ki a beolvasott karakterből
+#egy a oldalú négyzetet a képernyőre (minden sorban a db karakter legyen és összesen a db
+#sorunk legyen) egymásba ágyazott cilusok segítségével.
+#Például a = 4 és ch = 'M' esetében a program rajzolja ki a következőt
+
+# MMMM
+# MMMM
+# MMMM
+# MMMM
+
+num = int(input("Adj meg egy szamot: "))
+ch = input("Adj meg egy karaktert: ")
+
+for i in range(num):
+    print(num * ch)
