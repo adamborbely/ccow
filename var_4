@@ -1,0 +1,11 @@
+#4. A program kérjen be egy számot, majd írja ki a kis szorzótáblát erre a számra (1-től 5-ig). A program a
+#beolvasás után hagyjon ki egy üres sort.
+
+num_1 = int(input("Adj meg egy szamot: "))
+
+
+print("1 * " + str(num_1) + " = " + str(1 * num_1))
+print("2 * " + str(num_1) + " = " + str(2 * num_1))
+print("3 * " + str(num_1) + " = " + str(3 * num_1))
+print("4 * " + str(num_1) + " = " + str(4 * num_1))
+print("5 * " + str(num_1) + " = " + str(5 * num_1))
