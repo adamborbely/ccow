@@ -1,0 +1,12 @@
+# 1. Kérjünk be egy mondatot. Számoljuk meg és írassuk ki, hogy hány szóköz van benne.
+
+
+def translate(phrase):
+    x = 0
+    for letter in phrase:
+        if letter == " ":
+            x = x+1
+    return  x , "szokoz van"
+
+
+print(translate(input("Adj meg egy mondatot: ")))
