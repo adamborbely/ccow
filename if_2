@@ -1,0 +1,13 @@
+#2. Kérjünk be egy mondatot, majd írassuk ki ugyanezt a mondatot szóközök nélkül.
+
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter == " ":
+            translation = translation
+        else:
+            translation = translation + letter
+    return  translation
+
+
+print(translate(input("Adj meg egy mondatot: " "\n")))
