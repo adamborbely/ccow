@@ -1,0 +1,9 @@
+# Kérjünk be három természetes számot, ezek rendre 5, 2 és 1 koronásaink számát jelentik. Határozzuk
+# meg, és írassuk ki a teljes összeget.
+
+num_5 = int(input("Hany 5 koronasod akad? "))
+num_2 = int(input("Hany 2 koronasod akad? "))
+num_1 = int(input("Hany 1 koronasod akad? "))
+
+solution = ((num_5 * 5) + (num_2 * 2) + (num_1))
+print("Neked osszesen " + str(solution) + " koronad van." )
