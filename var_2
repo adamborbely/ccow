@@ -1,0 +1,15 @@
+# Kérjünk be két, egy napon belüli, időpontot (először az órát, aztán a percet, végül a másodpercet).
+# Számítsuk ki a két időpont közti különbséget másodpercekben és írassuk ki!
+
+time1 = int(input("Please enter Time 1 hour: "))
+time2 = int(input("Please enter Time 1 minute: "))
+time3 = int(input("Please enter Time 1 second: "))
+time4 = int(input("Please enter Time 2 hour: "))
+time5 = int(input("Please enter Time 2 minute: "))
+time6 = int(input("Please enter Time 2 second: "))
+
+Time2 = ((time1 * 60 * 60) + (time2 * 60) + time3)
+Time3 = ((time4 * 60 * 60) + (time5 * 60) + time6)
+
+solution = (Time3 - Time2)
+print(abs(solution))
