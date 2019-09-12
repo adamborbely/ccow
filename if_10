@@ -1,0 +1,16 @@
+# A program döntse el, hogy a bekért a , b , c, természetes számok lehetnek-e egy derékszögű
+# háromszög oldalhosszúságai. A programot úgy írjuk meg, hogy az a , b , c számok közül bármelyik
+# lehet a háromszög átfogója, a maradék kettő pedig a befogók (használjuk Pitagorasz tételét).
+
+a = int(input("Add meg az egyik oldalt: "))
+b = int(input("Add meg a masik oldalt: "))
+c = int(input("Add meg a harmadik oldalt: "))
+
+if a * a +  b * b == c * c:
+    print("Derek szog vagy fiam")
+elif a * a +  c * c == b * b:
+    print("Derek szog vagy fiam")
+elif b * b +  c * c == a * a:
+    print("Derek szog vagy fiam")
+else:
+    print("Nem vagy derek!")
