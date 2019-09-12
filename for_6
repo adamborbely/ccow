@@ -1,0 +1,17 @@
+# Kérjünk be két természetes számot ( M , N ), majd rajzoljunk ki a képernyőre egy M x N méretű
+# téglalapot csillag ( * ) jelekből úgy, hogy a téglalap belseje üres legyen. (Aka.: disznó ól csillagból
+# feladat.)
+#Például M = 8 és N = 4 esetében:
+#********
+#*      *
+#*      *
+#********
+
+value_m = int(input("Adj meg egy szamot: "))
+value_n = int(input("Adj meg egy masik szamot: "))
+
+for i in range(value_n):
+    if i == 0 or i == value_n -1:
+        print(value_m * "*")
+    else:
+        print("*" + (value_m - 2) *" " + "*" )
