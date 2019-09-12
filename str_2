@@ -1,0 +1,19 @@
+#Kérjünk be egy keresztnevet, majd írassuk ki ezt a nevet betűnként függőlegesen lefelé a képernyőre.
+#Például ha megadjuk névnek a "Peti"-t, a program írja ki ezt
+#P
+#e
+#t
+#i
+
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        translation = translation + letter + "\n"
+    return translation
+print(translate(input("Adj meg egy keresztnevet: ")))
+
+# Alternativ
+#mondat = input("Adj meg egy mondatot: ")
+
+#for i in mondat:
+#    print(i)
