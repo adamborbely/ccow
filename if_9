@@ -1,0 +1,11 @@
+# A program döntse el, hogy a bekért a , b , c természetes számok lehetnek-e egy derékszögű
+# háromszög oldalhosszúságai. Az a és b legyen a két befogó (használjuk Pitagorasz tételét).
+
+a = int(input("Add meg az egyik befogot: "))
+b = int(input("Add meg a masik befogot: "))
+c = int(input("Add meg az atfogot: "))
+
+if a * a +  b * b == c * c:
+    print("Derek szog vagy fiam")
+else:
+    print("Nem vagy derek!")
